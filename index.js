@@ -75,6 +75,9 @@ run().catch(console.dir);
 app.get('/', (req, res) => {
     res.send("From Backend Running Server")
 })
+app.get('/hello', (req, res) => {
+    res.send("hellow update here")
+})
 
 app.listen(port, () => {
     console.log("Running liser here node", port);
